@@ -1,11 +1,21 @@
-El challenge se construyó usando **nodejs** y **react**.
+## MercadoLibre Challenge
+
+**Cliente**
+React
+Css
+
+**Servidor**
+Node
+Express
+Nodemon (watcher)
 
 
-Para ejecutarlo, utilice el comando
+**Configuración**
 
-**yarn dev**
+Clonar el repositorio. 
+Ejecutar **yarn setUp**
 
+Para correr la aplicación:
 
-Si es la primera vez que va a hacerlo, antes ejecute 
-
-**yarn setUp**
+Ejecutar **yarn dev**
+El cliente debería inicializarse por defecto en localhost:3000 y el server en localhost:5000.
