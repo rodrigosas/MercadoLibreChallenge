@@ -16,7 +16,6 @@ function getJsonItems(data) {
         author: getAuthor(),
         items: getElements(data)
     };
-    console.log(json);
     return json;
 }
 
@@ -54,7 +53,6 @@ function getCategorie(data) {
     var maxVal = Math.max.apply(Math, filterCategories.values.map(function (o) { return o.results; }));
     var categorie = filterCategories.values.find(element => element.results === maxVal);
 
-    console.log("Maxima cat" + categorie)
     return categorie;
 }
 

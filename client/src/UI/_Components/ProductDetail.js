@@ -38,7 +38,7 @@ const ProductDetail = () => {
                 </button>
                         </div>
                     </div>
-                    {product.description != "" ?
+                    {product.description !== "" ?
                         (<div className="productDescription">
                             <label className="titleDescription">Descripción del producto</label>
                             <p className="description">{product.description}</p>

@@ -18,8 +18,8 @@ class App extends Component {
   }
 
   onSearchChange = (query) => {
-    if (query==this.state.query) return;
-    if(query=="") this.setState({query:""});
+    if (query===this.state.query) return;
+    if(query==="") this.setState({query:""});
     this.setState({ query: query , isFetching:true})
     ItemsRules.getItemsByQuery(query).then((res) => {
         this.setState({itemsRes:res, isFetching:false});
