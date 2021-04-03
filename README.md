@@ -1,19 +1,18 @@
 ## MercadoLibre Challenge
 
 **Cliente**
-<br /> React
-<br /> Css
+<br /> -React
+<br /> -Css
 
 **Servidor**
-<br /> Node
-<br /> Express
-<br /> Nodemon (watcher)
+<br /> -Node
+<br /> -Express
+<br /> -Nodemon (watcher)
 
-<br /> <br /> 
-**Configuración**
-<br /> Clonar el repositorio. 
-<br /> Ejecutar **yarn setUp**
+<br /> 
+**Para configurar el entorno**
+<br /><pre> Ejecutar **yarn setUp**</pre>
 
 **Para correr la aplicación**
-<br /> Ejecutar **yarn dev**
+<br /><pre> Ejecutar **yarn dev**</pre>
 <br /> El cliente debería inicializarse por defecto en localhost:3000 y el server en localhost:5000.
