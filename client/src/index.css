@@ -1,0 +1,250 @@
+body {
+  background-color: #ebebeb;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+#root{
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/*SearchBar*/
+.nav-search{
+  display:flex;
+  background-color: #fff159;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top:0.5rem;
+  padding-bottom:0.5rem;
+  -webkit-box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
+}
+
+.nav-logo {
+  background:url(https://http2.mlstatic.com/frontend-assets/ui-navigation/5.14.3/mercadolibre/logo__small.png)  no-repeat;
+  width: 44px;
+  height: 32px;
+  margin-right: 1rem;
+  align-self: center;
+  cursor: pointer;
+}
+
+.nav-search-input {
+  flex: auto;
+    padding-top: 5px;
+    padding-left: 12px;
+    padding-bottom: 7px;
+  
+    border: none;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 915;
+    font-family: inherit;
+}
+
+.nav-search-input:focus {
+  outline: none !important;
+  border:0px;
+}
+
+.nav-search-button{
+  background-image: none;
+  background-color: white;
+  height: 39px;
+  padding-top: 2px;
+  padding-left: 8px;
+  padding-right: 8px;
+  cursor: pointer;
+  border:none;
+}
+
+.nav-search-button:focus{
+  outline:0;
+}
+
+.content{
+  height: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+
+@media screen and (max-width: 600px){
+  .nav-search,.content{padding-left: 5%;
+  padding-right: 5%;}
+}
+
+/*list*/
+.breadcrumb{
+  margin-bottom:1rem;
+  font-size: 0.8rem;
+    color: gray;
+}
+
+/*item*/
+.item{
+  display: flex;
+  background: #ffffff;
+  padding: 1rem;
+  margin-bottom: 1px;
+}
+
+.item img{
+  width: 120px;
+    height: 120px;
+    cursor: pointer;
+}
+
+.item:first-child{
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.item:last-child{
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.item .header{
+  margin-left:2rem;
+  display:flex;
+  flex-direction: column;
+}
+
+.item .header .price{
+  margin-bottom: 0.8rem;
+}
+
+.item .header .price .amount{
+font-size: 1.4rem;
+}
+
+.item .header .price .cents{
+  vertical-align: top;
+  font-size: 0.8rem;
+}
+
+.item .header .title{
+  cursor: pointer;
+}
+
+/*detail*/
+.detail{
+  border-radius: 3px;
+  background-color: #ffffff;
+  padding: 1rem;
+}
+
+.detail.empty{
+  height: 100%;
+}
+
+.detail .productInfo{
+  display: flex;
+}
+
+.detail .productInfo img{
+  height: 450px;
+    width: 450px;
+    align-self: center;
+}
+
+.detail .productInfo .info {
+  margin-left: 1rem;
+  margin-top: 0rem;
+}
+
+.detail .productInfo .info .infoExtra .condition,.detail .productInfo .info .infoExtra .quantity{
+  font-size: 0.8rem;
+    color: gray;
+}
+
+.detail .productInfo .info .title{
+  font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.detail .productInfo .info .price {
+  margin-top:1rem;
+}
+
+.detail .productInfo .info .price .amount {
+  font-size: 1.9rem;
+}
+
+.detail .productInfo .info .price .cents{
+  vertical-align: top;
+  font-size:1.1rem;
+}
+
+.detail .productInfo button {
+  border-color: transparent;
+  background-color: #3483fa;
+  color: #fff;
+  cursor:pointer;
+  border-radius: 3px;
+  padding: 0.7rem;
+    width: 14rem;
+  margin-top:2rem;
+    outline:0;
+}
+
+.detail .productInfo button:focus{
+  outline:0;
+}
+
+.detail .productInfo button:hover{
+  border-color: transparent;
+    background-color: #2968c8;
+    color: #fff;
+    -webkit-transition: background-color .2s ease-in;
+    transition: background-color .2s ease-in;
+}
+
+.detail .productDescription {
+  margin-top:1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.detail .productDescription .titleDescription{
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 900px){
+.detail .productInfo button {
+  width: -webkit-fill-available;
+}}
+
+@media screen and (max-width: 750px){
+  .detail .productInfo img{
+    height: 350px;
+    width: 350px;
+  }
+
+  .detail .productInfo .info {
+    margin-left: 0rem;
+    margin-top: 1rem;
+  }
+  .detail .productInfo{
+    flex-direction: column;
+  }
+}
